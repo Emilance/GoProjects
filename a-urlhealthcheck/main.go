@@ -62,5 +62,6 @@ func main() {
 	for _, url := range Urls {
 		go healthChecker(url)
 	}
+
 	wg.Wait()
 }
